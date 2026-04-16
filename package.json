@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "browser-image-compression": "^2.0.2",
+    "sass": "^1.93.2"
+  }
+}

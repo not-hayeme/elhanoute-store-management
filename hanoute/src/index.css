@@ -1,0 +1,42 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #f6fdf8;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main layout flex container */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Sidebar stays fixed width, content grows */
+.main-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* TopBar stays fixed height, content scrolls */
+.content-area {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #f9fefb;
+}
+
+/* Optional smooth scroll */
+.content-area::-webkit-scrollbar {
+  width: 6px;
+}
+.content-area::-webkit-scrollbar-thumb {
+  background-color: #a8d5ba;
+  border-radius: 10px;
+}
